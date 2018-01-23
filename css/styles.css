@@ -11,44 +11,75 @@ Company logo: <i class="fa fa-plane" aria-hidden="true"></i>
 
  /* General Styles */
 
-
 header {
     height: 200px;
     background: linear-gradient(to bottom, #e76b8f, transparent);
 
-
-
 }
+
+
 
 /* Product Lineup Styles */
-.section-1 {
+.hero {
     height: 600px;
-    background: #708090;
-    background-image: url('../img/fuji-light.jpg');
-    background-size: contain;
+    background: radial-gradient(transparent, mistyrose),
+    url("../img/fuji-color.jpg");
+    background-size: cover;
 
 }
 
+a {
+    color: khaki;
+    background: darkgrey;
+    border: 10px 30px;
+    border-radius: 20px;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: plum;
+}
 
 /* Featured Product Styles */
-.section-2 {
+.nature {
     height: 300px;
     background: #FAEBD7;
 }
 
+.text-container {
+    margin: 20px;
+    padding: 15px;
+    color: salmon;
+    text-align: center;
+    vertical-align: center;
+}
 
-.section-3 {
+
+
+.food {
     height: 300px;
     background: #708090;
 }
 
 
-.section-4 {
+.art {
     height: 300px;
     background: #FAEBD7;
 }
+
+
 
 footer {
     height: 200px;
     background: #161616;
+}
+
+li a {
+    list-style: none;
+    display: block;
+}
+
+.event button {
+
 }
