@@ -1,0 +1,54 @@
+/* Font-family: Nunito 700
+red: #e01e3c;
+black: #161616;
+white: #ffffff;
+
+google fonts:
+
+Company logo: <i class="fa fa-plane" aria-hidden="true"></i>
+
+ */
+
+ /* General Styles */
+
+
+header {
+    height: 200px;
+    background: linear-gradient(to bottom, #e76b8f, transparent);
+
+
+
+}
+
+/* Product Lineup Styles */
+.section-1 {
+    height: 600px;
+    background: #708090;
+    background-image: url('../img/fuji-light.jpg');
+    background-size: contain;
+
+}
+
+
+/* Featured Product Styles */
+.section-2 {
+    height: 300px;
+    background: #FAEBD7;
+}
+
+
+.section-3 {
+    height: 300px;
+    background: #708090;
+}
+
+
+.section-4 {
+    height: 300px;
+    background: #FAEBD7;
+}
+
+footer {
+    height: 200px;
+    background: #161616;
+}
