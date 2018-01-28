@@ -17,6 +17,7 @@ header {
 
 }
 
+/* parent */
 .nav-flex-container {
     height: 75px;
     margin: 15px;
@@ -24,26 +25,39 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
+/* child */
 .nav-box {
     text-decoration: none;
     border-radius: 25px;
-    border: 30px 60px;
+    border: 30px 60px coral;
 
 }
 
-.reservation {
+.attraction {
+    color: plum;
+}
+
+.transportation {
+    color: pink;
+}
+
+.accommodation {
+    color: salmon;
+}
+
+.food {
+
+}
+
+.shopping {
 
 }
 
 .event {
-
-}
-
-.contact {
 
 }
 
@@ -139,18 +153,24 @@ a:hover {
 
 
 
-.food {
+.main {
     height: 300px;
     background: #708090;
 }
 
 
-.art {
+.secondary {
     height: 300px;
     background: #FAEBD7;
 }
 
+.third {
 
+}
+
+.fourth {
+
+}
 
 footer {
     height: 200px;
