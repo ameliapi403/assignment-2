@@ -12,19 +12,92 @@ Company logo: <i class="fa fa-plane" aria-hidden="true"></i>
  /* General Styles */
 
 header {
-    height: 200px;
+    height: 75px;
     background: linear-gradient(to bottom, #e76b8f, transparent);
 
 }
 
+.nav-flex-container {
+    height: 75px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
+}
+
+.nav-box {
+    text-decoration: none;
+    border-radius: 25px;
+    border: 30px 60px;
+
+}
+
+.reservation {
+
+}
+
+.event {
+
+}
+
+.contact {
+
+}
+
+.about {
+
+}
+
+.language {
+
+}
+.search {
+
+}
 
 /* Product Lineup Styles */
 .hero {
     height: 600px;
     background: radial-gradient(transparent, mistyrose),
-    url("../img/fuji-color.jpg");
-    background-size: cover;
+    url("../img/1.jpg");
+    background-size:cover;
+
+}
+
+/* parent class */
+.flex-container {
+    height: 600px;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+/* child-class */
+.box {
+    height: 100px;
+    margin: 60px;
+}
+
+.title {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
 
 }
 
@@ -45,6 +118,15 @@ a:hover {
 .nature {
     height: 300px;
     background: #FAEBD7;
+
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
 }
 
 .text-container {
