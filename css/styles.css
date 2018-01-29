@@ -1,11 +1,7 @@
-/* Font-family: Nunito 700
-red: #e01e3c;
-black: #161616;
-white: #ffffff;
 
- */
 * {
 box-sizing: border-box;
+
 }
 
 .wrapper {
@@ -129,21 +125,28 @@ a {
 /* Hero Section */
 .hero {
     height: 600px;
-    background: radial-gradient(transparent, mistyrose),
-    url("../img/1.jpg");
-    background-size:cover;
 
 }
 
 /* parent class */
+.desk-hero-container,
 .hero-container {
     height: 600px;
+    background: radial-gradient(transparent, mistyrose),
+    url("../img/fuji-color.jpg");
+    background-size: cover;
+
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 
+
+}
+
+.mobile-hero-container {
+    display: none;
 }
 
 /* child-class */
@@ -170,7 +173,7 @@ a {
 
 /* Featured Product Sections */
 .highlight {
-    height: 850px;
+    height: 500px;
     padding: 30px;
     margin-bottom: 50px;
     /* background: #708090; */
@@ -187,6 +190,7 @@ a {
 /* parent */
 .desk-hi,
 .hi-flex-container {
+    height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,27 +262,29 @@ a {
     transform: translateY(0px);
 }
 
-.mobile-ev {
-    display: none;
-}
 
+/* Event Section */
 .event {
-    height: 700px;
-    padding: 50px;
+    height: 300px;
+    padding: 30px;
     background: linear-gradient(to bottom, transparent, #f48fb1);
 
-    /* background: #708090; #e76b8f 30%, #f48fb1 60%,*/
 }
 
 .event h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 24px;
+    margin: 20px;
 }
 
+.mobile-ev {
+    display: none;
+}
 /* parent */
 .desk-ev,
 .event-container {
+    height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -291,13 +297,14 @@ a {
 /* child */
 .event-box {
     height: 100px;
-    width: 200px;
     margin: 10px;
     background: rgba(0, 0, 255, .2);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
 
 
 }
@@ -393,7 +400,32 @@ a {
 
     }
 
+    .hero {
+        height: 250px;
+    }
+
+    .mobile-hero-container {
+        height: 250px;
+        background: radial-gradient(transparent, mistyrose),
+        url("../img/fuji.jpg");
+        background-size: cover;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        flex-shrink: 1;
+        flex-grow: 1;
+
+    }
+
+    .highlight {
+        height: 900px;
+    }
+
     .mobile-hi {
+        height: 850px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -401,9 +433,14 @@ a {
         flex-grow: 1;
         flex-shrink: 1;
 
+    }
+
+    .event {
+        height: 800px;
     }
 
     .mobile-ev {
+        height: 650px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -413,8 +450,11 @@ a {
 
     }
 
+    .event-box {
+        width: 60%;
+    }
+
     .mobile-icon {
-        height: 250px;
         margin: 0 30px;
         display: flex;
         flex-direction: row;
@@ -426,6 +466,10 @@ a {
     }
 
     .desktop-nav {
+        display: none;
+    }
+
+    .desk-hero-container {
         display: none;
     }
 
